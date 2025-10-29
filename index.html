@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxwell's Web Portfolio</title>
+    <style>
+        body {
+            background-color: #c0c0c0;
+            font-family: "Comic Sans MS", "Arial", sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 3px outset #dfdfdf;
+            padding: 0;
+        }
+
+        .title-bar {
+            background: linear-gradient(180deg, #000080 0%, #1084d0 100%);
+            color: #ffffff;
+            padding: 4px 8px;
+            font-family: "MS Sans Serif", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .title-bar::before {
+            content: "★";
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff0000;
+            text-shadow: 2px 2px #ffff00;
+            font-size: 36px;
+            margin: 20px 0;
+            animation: rainbow 3s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            16% { color: #ff8800; }
+            33% { color: #ffff00; }
+            50% { color: #00ff00; }
+            66% { color: #0088ff; }
+            83% { color: #8800ff; }
+            100% { color: #ff0000; }
+        }
+
+        .welcome-text {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg,
+                red 0%, red 14.28%,
+                orange 14.28%, orange 28.56%,
+                yellow 28.56%, yellow 42.84%,
+                green 42.84%, green 57.12%,
+                blue 57.12%, blue 71.4%,
+                indigo 71.4%, indigo 85.68%,
+                violet 85.68%, violet 100%);
+            margin: 20px 0;
+        }
+
+        .showcase-section {
+            margin: 30px 0;
+        }
+
+        .showcase-section h2 {
+            color: #000080;
+            font-size: 24px;
+            border-bottom: 2px dashed #000080;
+            padding-bottom: 5px;
+        }
+
+        .showcase-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .showcase-item {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #ffffcc;
+            border: 2px solid #000000;
+            box-shadow: 5px 5px 0px #808080;
+        }
+
+        .showcase-item a {
+            color: #0000ff;
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .showcase-item a:visited {
+            color: #800080;
+        }
+
+        .showcase-item a:hover {
+            color: #ff0000;
+            background-color: #ffff00;
+        }
+
+        .showcase-item p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+
+        .under-construction {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .under-construction img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(2, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #000080;
+            color: #ffffff;
+            border: 3px inset #dfdfdf;
+        }
+
+        .footer a {
+            color: #00ffff;
+        }
+
+        .counter {
+            text-align: center;
+            margin: 20px 0;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+            padding: 10px;
+            background-color: #000000;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            display: inline-block;
+        }
+
+        .badges {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #ff00ff;
+            color: #ffffff;
+            border: 2px outset #ff00ff;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        marquee {
+            background-color: #ffff00;
+            padding: 10px;
+            border: 2px solid #000000;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">
+            Maxwell's Portfolio - Netscape Navigator
+        </div>
+
+        <div class="content">
+            <h1>★ Welcome to Maxwell's Web Space! ★</h1>
+
+            <div class="divider"></div>
+
+            <marquee behavior="scroll" direction="left">
+                🌟 Welcome to my personal website! 🌟 Check out my cool projects below! 🌟
+            </marquee>
+
+            <div class="welcome-text">
+                <p><strong>Greetings, visitor!</strong></p>
+                <p>You've just entered Maxwell's corner of the World Wide Web.</p>
+                <p>Here you'll find some of my latest creations and experiments.</p>
+                <p class="blink">⚡ NEW PROJECTS ADDED REGULARLY! ⚡</p>
+            </div>
+
+            <div class="badges">
+                <span class="badge">HTML 5.0</span>
+                <span class="badge">CSS POWERED</span>
+                <span class="badge">JAVASCRIPT ENABLED</span>
+                <span class="badge">BEST VIEWED IN ANY BROWSER</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="showcase-section">
+                <h2>🎨 My Showcase Projects</h2>
+                <ul class="showcase-list">
+                    <li class="showcase-item">
+                        <a href="magic-cards.html">✨ Magic: The Gathering Cards Fan Display</a>
+                        <p>An interactive fan-style display of Magic: The Gathering cards with smooth hover effects. Features cards from Modern Horizons 2 including the Elemental Incarnations cycle.</p>
+                    </li>
+                    <!-- Add more showcase items here as you create them -->
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="under-construction">
+                <p style="font-size: 24px;">🚧 <span class="blink">MORE PROJECTS COMING SOON!</span> 🚧</p>
+            </div>
+
+            <div class="counter">
+                [ VISITOR COUNT: <span id="visitor-count">001337</span> ]
+            </div>
+
+            <div class="footer">
+                <p>© 2025 Maxwell's Web Portfolio</p>
+                <p>Made with ❤️ and a touch of nostalgia</p>
+                <p style="margin-top: 10px; font-size: 12px;">
+                    This page is optimized for 800x600 resolution 😎
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulate random visitor count changes
+        function updateVisitorCount() {
+            const countElement = document.getElementById('visitor-count');
+            let count = parseInt(countElement.textContent);
+            count += Math.floor(Math.random() * 10) + 1;
+            countElement.textContent = count.toString().padStart(6, '0');
+        }
+
+        // Update count every 5 seconds for fun
+        setInterval(updateVisitorCount, 5000);
+    </script>
+</body>
+</html>
